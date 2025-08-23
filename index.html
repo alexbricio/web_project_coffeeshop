@@ -94,7 +94,6 @@
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=8YyfsUV4R1SbUM84"
                 title="Receta en Aeropress"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -110,7 +109,6 @@
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=GEiZQ6L-s3EyC-dd"
                 title="Receta en French Press"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -123,7 +121,79 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+
+          <form class="reservation__form form" name="reservation">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Nombre *</label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="guests"
+                >Número de comensales *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="guests"
+                name="guests"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="datetime">Fecha y hora *</label>
+              <input
+                class="form__input"
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="email"
+                >Tu correo electrónico *</label
+              >
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button class="form__button" type="submit">
+              Reservar una mesa
+            </button>
+
+            <label class="form__label form__label_type_checkbox">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="terms"
+                required
+              />
+              Acepto los términos de uso
+            </label>
+          </form>
+        </section>
+        <section class="contacts" id="contacts"></section>
       </main>
       <footer class="footer"></footer>
     </div>

@@ -21,8 +21,6 @@
       name="keywords"
       content="cafetería, café, postres, barista, coffee, coffee shop, latte, pan"
     />
-
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
 
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
@@ -194,7 +192,54 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer class="footer" id="contacts">
+        <div class="footer__circle" aria-hidden="true"></div>
+
+        <div class="footer__content">
+          <img
+            class="footer__logo"
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Triple Espresso"
+            width="105"
+            height="39"
+          />
+
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <span
+                  class="footer__social-icon footer__social-icon_type_facebook"
+                  aria-hidden="true"
+                ></span>
+                <a
+                  class="footer__social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <span
+                  class="footer__social-icon footer__social-icon_type_instagram"
+                  aria-hidden="true"
+                ></span>
+                <a
+                  class="footer__social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2024 Alex Bricio</p>
+      </footer>
     </div>
   </body>
 </html>
